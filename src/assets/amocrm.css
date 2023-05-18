@@ -1,0 +1,1359 @@
+:root {
+    --devio-color-white-rgb: 255, 255, 255;
+    --devio-color-white: rgb(var(--devio-color-white-rgb));
+    --devio-color-blue-500: #4c8bf7;
+    --devio-color-blue-700: #4d85e6;
+    --devio-color-blue-900: #4077d6;
+    --devio-color-gray-300: #fcfcfc;
+    --devio-color-gray-500: #dbdedf;
+    --devio-color-gray-700: #8591a5;
+    --devio-color-gray-800: #92989b;
+    --devio-color-gray-900: #2e3640;
+    --devio-font-family: "PT Sans", Arial, sans-serif;
+    --devio-font-light: 300;
+    --devio-font-regular: 400;
+    --devio-font-bold: 700;
+    --devio-font-size: 14px;
+    --devio-font-size-sm: 12px;
+    --devio-font-size-xl: 20px;
+    --devio-border-radius: 3px;
+    --devio-padding: 10px;
+    --devio-margin: 7px;
+    --devio-component-max-height: 38px
+}
+
+.devio-btn-font-light {
+    font-weight: 400 !important
+}
+
+.devio-btn-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-blue-900);
+    background: var(--devio-color-blue-500);
+    color: var(--devio-color-whie)
+}
+
+.devio-btn-primary[type=button],
+.devio-btn-primary[type=reset],
+.devio-btn-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-primary:hover:not([disabled]),
+.devio-btn-primary:active:not([disabled]),
+.devio-btn-primary .devio-active {
+    background: var(--devio-color-blue-700)
+}
+
+.devio-btn-secondary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900);
+    background: var(--devio-color-gray-300)
+}
+
+.devio-btn-secondary[type=button],
+.devio-btn-secondary[type=reset],
+.devio-btn-secondary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-secondary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-secondary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-secondary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-secondary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-secondary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-light {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900)
+}
+
+.devio-btn-light[type=button],
+.devio-btn-light[type=reset],
+.devio-btn-light[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-light:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-light[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-light.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-light.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-light.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    background: var(--devio-color-gray-700);
+    color: var(--devio-color-white)
+}
+
+.devio-btn-dark[type=button],
+.devio-btn-dark[type=reset],
+.devio-btn-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-link {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: var(--devio-color-gray-800)
+}
+
+.devio-btn-link[type=button],
+.devio-btn-link[type=reset],
+.devio-btn-link[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-link:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-link[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-link.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-link.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-link.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-outline-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-blue-900);
+    color: var(--devio-color-blue-900)
+}
+
+.devio-btn-outline-primary[type=button],
+.devio-btn-outline-primary[type=reset],
+.devio-btn-outline-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-outline-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-outline-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-outline-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-outline-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-outline-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-outline-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    background: var(--devio-color-white);
+    color: var(--devio-color-gray-700)
+}
+
+.devio-btn-outline-dark[type=button],
+.devio-btn-outline-dark[type=reset],
+.devio-btn-outline-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-outline-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-outline-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-outline-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-outline-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-outline-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-style: dashed;
+    border-color: var(--devio-color-blue-900);
+    color: var(--devio-color-blue-900)
+}
+
+.devio-btn-dash-primary[type=button],
+.devio-btn-dash-primary[type=reset],
+.devio-btn-dash-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-secondary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900);
+    background: var(--devio-color-gray-300);
+    border-style: dashed
+}
+
+.devio-btn-dash-secondary[type=button],
+.devio-btn-dash-secondary[type=reset],
+.devio-btn-dash-secondary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-secondary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-secondary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-secondary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-secondary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-secondary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    border-style: dashed;
+    background: var(--devio-color-white);
+    color: var(--devio-color-gray-700)
+}
+
+.devio-btn-dash-dark[type=button],
+.devio-btn-dash-dark[type=reset],
+.devio-btn-dash-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle
+}
+
+.devio-btn-group>button,
+.devio-btn-group>a {
+    position: relative;
+    flex: 0 1 auto
+}
+
+.devio-btn-group>button:first-child,
+.devio-btn-group>a:first-child {
+    margin-left: 0
+}
+
+.devio-btn-group button+button,
+.devio-btn-group a+a {
+    margin-left: -1px
+}
+
+.devio-btn-group>.devio-btn-group:not(:last-child)>button,
+.devio-btn-group>.devio-btn-group:not(:last-child)>a,
+.devio-btn-group>a:not(:last-child),
+.devio-btn-group>button:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.devio-btn-group>.devio-btn-group:not(:first-child)>button,
+.devio-btn-group>.devio-btn-group:not(:first-child)>a,
+.devio-btn-group>a:not(:first-child),
+.devio-btn-group>button:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+:root {
+    --devio-color-white-rgb: 255, 255, 255;
+    --devio-color-white: rgb(var(--devio-color-white-rgb));
+    --devio-color-blue-500: #4c8bf7;
+    --devio-color-blue-700: #4d85e6;
+    --devio-color-blue-900: #4077d6;
+    --devio-color-gray-300: #fcfcfc;
+    --devio-color-gray-500: #dbdedf;
+    --devio-color-gray-700: #8591a5;
+    --devio-color-gray-800: #92989b;
+    --devio-color-gray-900: #2e3640;
+    --devio-font-family: "PT Sans", Arial, sans-serif;
+    --devio-font-light: 300;
+    --devio-font-regular: 400;
+    --devio-font-bold: 700;
+    --devio-font-size: 14px;
+    --devio-font-size-sm: 12px;
+    --devio-font-size-xl: 20px;
+    --devio-border-radius: 3px;
+    --devio-padding: 10px;
+    --devio-margin: 7px;
+    --devio-component-max-height: 38px
+}
+
+.devio-btn-font-light {
+    font-weight: 400 !important
+}
+
+.devio-btn-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-blue-900);
+    background: var(--devio-color-blue-500);
+    color: var(--devio-color-whie)
+}
+
+.devio-btn-primary[type=button],
+.devio-btn-primary[type=reset],
+.devio-btn-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-primary:hover:not([disabled]),
+.devio-btn-primary:active:not([disabled]),
+.devio-btn-primary .devio-active {
+    background: var(--devio-color-blue-700)
+}
+
+.devio-btn-secondary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900);
+    background: var(--devio-color-gray-300)
+}
+
+.devio-btn-secondary[type=button],
+.devio-btn-secondary[type=reset],
+.devio-btn-secondary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-secondary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-secondary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-secondary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-secondary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-secondary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-light {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900)
+}
+
+.devio-btn-light[type=button],
+.devio-btn-light[type=reset],
+.devio-btn-light[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-light:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-light[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-light.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-light.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-light.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    background: var(--devio-color-gray-700);
+    color: var(--devio-color-white)
+}
+
+.devio-btn-dark[type=button],
+.devio-btn-dark[type=reset],
+.devio-btn-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-link {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: var(--devio-color-gray-800)
+}
+
+.devio-btn-link[type=button],
+.devio-btn-link[type=reset],
+.devio-btn-link[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-link:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-link[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-link.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-link.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-link.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-outline-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-blue-900);
+    color: var(--devio-color-blue-900)
+}
+
+.devio-btn-outline-primary[type=button],
+.devio-btn-outline-primary[type=reset],
+.devio-btn-outline-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-outline-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-outline-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-outline-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-outline-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-outline-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-outline-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    background: var(--devio-color-white);
+    color: var(--devio-color-gray-700)
+}
+
+.devio-btn-outline-dark[type=button],
+.devio-btn-outline-dark[type=reset],
+.devio-btn-outline-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-outline-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-outline-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-outline-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-outline-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-outline-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-primary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-style: dashed;
+    border-color: var(--devio-color-blue-900);
+    color: var(--devio-color-blue-900)
+}
+
+.devio-btn-dash-primary[type=button],
+.devio-btn-dash-primary[type=reset],
+.devio-btn-dash-primary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-primary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-primary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-primary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-primary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-primary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-secondary {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-500);
+    color: var(--devio-color-gray-900);
+    background: var(--devio-color-gray-300);
+    border-style: dashed
+}
+
+.devio-btn-dash-secondary[type=button],
+.devio-btn-dash-secondary[type=reset],
+.devio-btn-dash-secondary[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-secondary:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-secondary[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-secondary.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-secondary.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-secondary.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-dash-dark {
+    font-family: var(--devio-font-family);
+    overflow: visible;
+    text-transform: none;
+    font-weight: var(--devio-font-bold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color: var(--devio-color-gray-500);
+    max-height: var(--devio-component-max-height);
+    padding: var(--devio-padding);
+    border-radius: var(--devio-border-radius);
+    vertical-align: middle;
+    font-size: var(--devio-font-size);
+    line-height: var(--devio-font-size);
+    outline: 0px;
+    z-index: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-color: var(--devio-color-gray-700);
+    border-style: dashed;
+    background: var(--devio-color-white);
+    color: var(--devio-color-gray-700)
+}
+
+.devio-btn-dash-dark[type=button],
+.devio-btn-dash-dark[type=reset],
+.devio-btn-dash-dark[type=submit] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button
+}
+
+.devio-btn-dash-dark:active {
+    transform: translateY(1px)
+}
+
+.devio-btn-dash-dark[disabled] {
+    cursor: default !important;
+    opacity: .6 !important;
+    transform: translateY(0px) !important
+}
+
+.devio-btn-dash-dark.devio-btn-sm {
+    padding: 2px 6px;
+    max-height: 28px;
+    font-size: 12px
+}
+
+.devio-btn-dash-dark.devio-btn-lg {
+    padding: 15px 25px;
+    min-height: 50px;
+    font-size: 16px
+}
+
+.devio-btn-dash-dark.devio-btn-block {
+    display: block;
+    width: 100%
+}
+
+.devio-btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle
+}
+
+.devio-btn-group>button,
+.devio-btn-group>a {
+    position: relative;
+    flex: 0 1 auto
+}
+
+.devio-btn-group>button:first-child,
+.devio-btn-group>a:first-child {
+    margin-left: 0
+}
+
+.devio-btn-group button+button,
+.devio-btn-group a+a {
+    margin-left: -1px
+}
+
+.devio-btn-group>.devio-btn-group:not(:last-child)>button,
+.devio-btn-group>.devio-btn-group:not(:last-child)>a,
+.devio-btn-group>a:not(:last-child),
+.devio-btn-group>button:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.devio-btn-group>.devio-btn-group:not(:first-child)>button,
+.devio-btn-group>.devio-btn-group:not(:first-child)>a,
+.devio-btn-group>a:not(:first-child),
+.devio-btn-group>button:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}

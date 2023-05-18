@@ -1,0 +1,29 @@
+{
+    "widget": {
+        "name": "widget.name",
+        "description": "widget.description",
+        "short_description": "widget.short_description",
+        "version": "1.3.3",
+        "interface_version": 2,
+        "init_once": true,
+        "locale": [
+            "ru"
+        ],
+        "installation": true,
+        "support": {
+            "link": "https://www.amocrm.com",
+            "email": "support@amocrm.com"
+        }
+    },
+    "locations": [
+        "settings",
+        "anywhere"
+    ],
+    "settings": {
+        "login": {
+            "name": "settings.login",
+            "type": "text",
+            "required": true
+        }
+    }
+}

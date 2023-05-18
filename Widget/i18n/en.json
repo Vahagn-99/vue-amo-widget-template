@@ -1,0 +1,13 @@
+{
+    "widget":{
+        "name":"Vue Widget Template",
+        "short_description":"Short description",
+        "description":"Full description"
+    },
+    "settings":{
+        "login":"User login",
+        "api_key":"API key",
+        "account":"Account",
+        "try_free": "Try for free"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "widget":{
+        "name":"Vue Widget",
+        "short_description":"Шаблон виджета на Vue.JS",
+        "description":"Шаблон виджета на Vue.JS"
+    },
+    "settings":{
+        "login":"Логин",
+        "api_key":"ключ API",
+        "account":"Аккаунт",
+        "try_free": "Попробовать бесплатно"
+    }
+}
