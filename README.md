@@ -1,10 +1,9 @@
 # The Vuejs 3 (vuex) template for create AmoCRM widgets
 # For dev server use vite (npm run dev) 
-# For dev server use webpack (npm run build) it will generate widget.zip file automaticly 
+# For generating widget use webpack (npm run build) it will generate widget.zip file automaticly 
 # Afer that you can test it using private integrations 
 
 This template should help get you started developing with Vue 3 in Vite.
-
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
